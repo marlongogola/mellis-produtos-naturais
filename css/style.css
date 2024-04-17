@@ -5,7 +5,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1rem;
     align-items: center;
     font-family: "Familjen Grotesk", sans-serif;
     font-size: 1.2rem;
@@ -45,13 +45,6 @@ body {
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-}
-
-.img{
-    grid-area: img;
-    background-image: url(/img/quem\ somos.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .img-2 {
@@ -144,120 +137,6 @@ body {
     border-radius: 5px;
 }
 
-@media (max-width: 900px) {
-    .header {
-        padding: .4rem;
-    }
-
-    .logo__mellis {
-        width: 75px;
-    }
-
-    .quem-somos {
-        font-weight: 600;
-        font-size: 3rem;
-    }
-
-    .inicio {
-        display: grid;
-        grid-template-areas: 
-        "texto"
-        "img"
-        "localizacao";
-        grid-template-columns: repeat(1, auto);
-        margin: 5px;
-        padding: 0;
-    }
-
-    .footer {
-        display: flex;
-        align-items: center;
-        height: 50px;
-    }
-}
-
-@media (max-width:620px){    
-
-    .header {
-        padding: .3rem;
-    }
-
-    .maps__texto {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .mapa__google {
-        max-width: 300px;
-        max-height: 200px;
-    }
-}
-
-
-@media (max-width: 470px){
-    .header {
-        max-width: 470px;
-        justify-content: center;
-    }
-
-    .texto {
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .menu {
-        display: none;
-    }
-    
-    .logo__mellis{
-        align-self: center;
-    }
-
-    .quem-somos {
-        font-weight: 600;
-        font-size: 2.5rem;
-    }
-
-    .img {
-        background-image: url(/img/20221026_152033.jpg);
-        background-size: cover;
-    }
-
-    .footer {
-        max-width: 470px;
-    }
-
-}
-
-@media (max-width: 420px){
-    .header {
-        max-width: 420px;
-        justify-content: center;
-    }
-
-    .localizacao{
-        max-width: 420px;
-    }
-
-    .footer {
-        max-width: 420px;
-    }
-}
-
-@media (max-width: 360px){
-    .header {
-        max-width: 360px;
-        justify-content: center;
-    }
-
-    .localizacao{
-        max-width: 360px;
-    }
-
-    .footer {
-        max-width: 360px;
-    }
-}
 
 
 

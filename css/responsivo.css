@@ -1,0 +1,60 @@
+@media (min-width: 360px){
+    .header {
+        justify-content: center;
+    }
+
+    .inicio {
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        "img"
+        "localizacao";
+        grid-template-columns: repeat(1, minmax(360px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .img {
+        grid-area: img;
+        background-image: url(/img/20221026_152033.jpg);
+        background-size: cover;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 720px){
+    .header {
+        justify-content: space-between;
+    }
+    .inicio {
+        display: grid;
+        grid-template-areas: 
+        "texto img"
+        "img-2 img-3"
+        "localizacao localizacao";
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .img{
+        grid-area: img;
+        background-image: url(/img/20221026_152033.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 1024px){
+
+    .img{
+        grid-area: img;
+        background-image: url(/img/quem\ somos.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
