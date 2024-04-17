@@ -1,0 +1,239 @@
+body {
+    background-color: #18662c;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    font-family: "Familjen Grotesk", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.logo__mellis {
+    width: 100px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.inicio {
+    display: grid;
+    grid-template-areas: 
+    "texto img"
+    "img-2 img-3"
+    "localizacao localizacao";
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin: 5px;
+    gap: 5px;
+}
+
+.texto {
+    grid-area: texto;
+    background-color: white;
+    color: #18662c;
+    font-family: "Familjen Grotesk", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.img{
+    grid-area: img;
+    background-image: url(/img/quem\ somos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-2 {
+    grid-area: img-2;
+    background-image: url(/img/mellis\ arg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;    
+}
+.img-3 {
+    grid-area: img-3;
+    background-image: url(/img/mellis\ arg\ 2.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.quem-somos {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+.quem-somos_p {
+    font-size: 2rem;
+}
+
+.localizacao {
+    grid-area: localizacao;
+}
+
+.maps {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 5rem;
+}
+
+.maps__h2 {
+    font-family: "Familjen Grotesk", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color:#18662c;
+    margin-bottom: 20px;
+}
+
+.maps__p {
+    font-family:"Familjen Grotesk", sans-serif;
+    font-size: 1.2rem;
+    color:#18662c;
+    margin-bottom: 20px;
+    max-width: 450px;
+}
+
+.mapa__google {
+    width: 450px;
+    height: 350px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+    margin: 10px;
+
+}
+
+.footer__insta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer__insta p {
+    font-family:"Familjen Grotesk", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.footer__insta img {
+    width: 29px;
+}
+
+.footer__insta img:hover {
+    background-color: #93d0a2;
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: .4rem;
+    }
+
+    .logo__mellis {
+        width: 75px;
+    }
+
+    .quem-somos {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+
+    .inicio {
+        display: grid;
+        grid-template-areas: 
+        "texto"
+        "img"
+        "localizacao";
+        grid-template-columns: repeat(1, auto);
+        margin: 5px;
+        padding: 0;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+}
+
+@media (max-width:620px){    
+
+    .header {
+        padding: .3rem;
+    }
+
+    .maps__texto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa__google {
+        max-width: 300px;
+        max-height: 200px;
+    }
+}
+
+
+@media (max-width: 470px){
+    .header {
+        min-width: 470px;
+        justify-content: center;
+    }
+
+    .texto {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .menu {
+        display: none;
+    }
+    
+    .logo__mellis{
+        align-self: center;
+    }
+
+    .quem-somos {
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    .img {
+        background-image: url(/img/20221026_152033.jpg);
+        max-width: 470px;
+    }
+
+    .footer {
+        min-width: 470px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
