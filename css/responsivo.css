@@ -13,6 +13,10 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
+    .mapa__google {
+        width: 360px;
+    }
+
     .img {
         grid-area: img;
         background-image: url(/img/20221026_152033.jpg);
