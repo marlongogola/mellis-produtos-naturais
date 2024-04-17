@@ -1,4 +1,4 @@
-@media (min-width: 360px){
+@media (min-width: 315px){
     .header {
         justify-content: center;
     }
@@ -19,7 +19,7 @@
 
     .img {
         grid-area: img;
-        background-image: url(/img/20221026_152033.jpg);
+        background-image: url(/img/mellis\ arg\ 2.png);
         background-size: cover;
     }
 
@@ -28,7 +28,7 @@
     }
 }
 
-@media (min-width: 720px){
+@media (min-width: 670px){
     .header {
         justify-content: space-between;
     }
