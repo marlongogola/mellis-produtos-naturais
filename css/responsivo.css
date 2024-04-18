@@ -13,8 +13,14 @@
         grid-template-rows: repeat(3, 1fr);
     }
 
+    .maps {
+        justify-content: center;
+        padding: 1rem;
+    }
+
     .mapa__google {
         width: 360px;
+        height: 250px;
     }
 
     .img {
