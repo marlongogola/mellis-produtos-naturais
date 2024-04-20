@@ -43,6 +43,7 @@
         padding: 10px;
         background-color: rgba(9, 40, 17, 0.8);
         width: 40vw;
+        align-items: center;
     }
 
     .lista li {
