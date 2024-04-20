@@ -15,21 +15,22 @@
 </head>
 <body>
     <header>
-        <div class="header">
+        <menu class="header">
             <div class="logo__mellis">
                 <img src="/img/logo mellis branco.png" alt="logo-mellis" class="logo__mellis__img">
             </div>
-            <div>
-                <ul class="menu">
+            <div class="menu">
+                <ul class="lista">
                     <li><a href="#quem__somos">Quem Somos</a></li>
                     <li><a href="#atendimento">Atendimento</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-        </div>
+            <span id="menu-btn" class="material-symbols-outlined">menu</span>
+        </menu>
     </header>
     <section class="inicio">
-        <div class="texto">
+        <nav class="texto">
             <h1 class="quem-somos">Quem Somos</h1>
             <p class="quem-somos__p"> 
                     Bem-vindo à Mellis! Fundada em abril do ano de 2022, somos dedicadas a fornecer os melhores produtos naturais para a sua saúde e vitalidade. Nosso compromisso é com a pureza e a autenticidade, selecionando cuidadosamente ingredientes naturais e orgânicos para cada item que oferecemos.
@@ -37,11 +38,11 @@
             <p class="quem-somos__p">
                     Acreditamos que a natureza oferece tudo o que precisamos para nos nutrir e fortalecer, e é por isso que buscamos trazer até você uma variedade de produtos que respeitam o corpo e o meio ambiente. Desde superalimentos até cuidados pessoais e produtos para a casa, nossa seleção é cuidadosamente curada para atender às suas necessidades.
             </p>
-        </div>
+        </nav>
         <div class="img"></div>
         <div class="img-2"></div>
         <div class="img-3"></div>
-        <div class="localizacao" id="atendimento">
+        <nav class="localizacao" id="atendimento">
             <div class="maps">
                 <div class="maps__texto">
                     <h2 class="maps__h2">Endereço:</h2>
@@ -53,7 +54,7 @@
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14420.565478587729!2d-49.2641577!3d-25.3665781!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce7ce1ebcb235%3A0x70b5668b329706fa!2sMellis%20Produtos%20Naturais!5e0!3m2!1spt-PT!2sbr!4v1713278925528!5m2!1spt-PT!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa__google"></iframe>
             </div>
-        </div>
+        </nav>
     </section>
     <footer class="footer" id="contato">
         <div class="footer__insta">
@@ -69,14 +70,6 @@
             <p>Whatsapp</p>
         </div>
     </footer>
-    <script>
-        function clickMenu(){
-            if (menu.style.display == 'flex') {
-                menu.style.display = 'none'
-            } else {
-                menu.style.display = 'flex';
-            }
-}
-    </script>
+    <script src="index.js"></script>
 </body>
 </html>

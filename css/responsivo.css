@@ -1,6 +1,7 @@
 @media (min-width: 315px){
     .header {
-        justify-content: center;
+        justify-content: space-between;
+        padding: 10px;
     }
 
     .inicio {
@@ -19,7 +20,7 @@
     }
 
     .mapa__google {
-        width: 360px;
+        width: 315px;
         height: 250px;
     }
 
@@ -32,12 +33,25 @@
     .menu {
         display: none;
     }
+
+    .lista {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        right: 0px;
+        margin-top: 45px;
+        padding: 10px;
+        background-color: rgba(9, 40, 17, 0.8);
+        width: 40vw;
+    }
+
+    .lista li {
+        margin: 10px;
+    }
 }
 
 @media (min-width: 670px){
-    .header {
-        justify-content: space-between;
-    }
+
     .inicio {
         display: grid;
         grid-template-areas: 
@@ -45,10 +59,6 @@
         "img-2 img-3"
         "localizacao localizacao";
         grid-template-columns: repeat(2,1fr);
-    }
-
-    .menu {
-        display: flex;
     }
 
     .img{
@@ -60,6 +70,24 @@
 }
 
 @media (min-width: 1024px){
+    
+    #menu-btn {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .lista {
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background-color:#18662c;
+    }
 
     .img{
         grid-area: img;
